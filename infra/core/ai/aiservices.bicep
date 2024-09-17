@@ -42,7 +42,7 @@ resource deployment 'Microsoft.CognitiveServices/accounts/deployments@2023-05-01
   }
   sku: contains(deployment, 'sku') ? deployment.sku : {
     name: 'Standard'
-    capacity: 40
+    capacity: 10
   }
 }]
 
